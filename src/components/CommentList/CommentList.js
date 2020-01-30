@@ -3,7 +3,7 @@ import Comment from '../Comment/Comment';
 
 function CommentList(props) {
     return (
-        <div>
+        <React.Fragment>
             {props.comments.map((comment) => (
                 <Comment
                     key={comment.id}
@@ -11,7 +11,7 @@ function CommentList(props) {
                     message={comment.message}
                 />
             ))}
-        </div>
+        </React.Fragment>
     );
 }
 

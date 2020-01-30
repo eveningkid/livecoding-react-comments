@@ -15,16 +15,12 @@ const comments = [
   {
       id: '2',
       author: 'Vicky',
-      message: 'I am an alcoholic. Sorry did i really just say that'
+      message: 'Hello again',
   },
 ];
 
 function App() {
-  return (
-    <div>
-      <CommentList comments={comments} />
-    </div>
-  );
+  return <CommentList comments={comments} />;
 }
 
 export default App;
