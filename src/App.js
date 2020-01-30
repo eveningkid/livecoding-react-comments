@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CommentList from './components/CommentList/CommentList';
+
+const comments = [
+  {
+      id: '0',
+      author: 'Arnaud',
+      message: 'Hi',
+  },
+  {
+      id: '1',
+      author: 'Mollie',
+      message: 'Goodbye',
+  },
+  {
+      id: '2',
+      author: 'Vicky',
+      message: 'I am an alcoholic. Sorry did i really just say that'
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CommentList comments={comments} />
     </div>
   );
 }
